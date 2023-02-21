@@ -35,5 +35,5 @@ abstract class DataChannel {
 
   /// Receive chunks through the socket, and add them to the map of chunks
   /// if they are not already in it.
-  Future<void> receiveChunks(Socket socket, Map<int, FileChunk> chunks);
+  Future<void> receiveChunks(Map<int, FileChunk> chunks);
 }

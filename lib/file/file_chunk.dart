@@ -10,4 +10,7 @@ class FileChunk {
   Uint8List data;
 
   FileChunk({required this.identifier, required this.data});
+
+  @override
+  String toString() => "$identifier ${String.fromCharCodes(data)} ";
 }
